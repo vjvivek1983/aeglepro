@@ -3,9 +3,8 @@ from transformers import pipeline
 import json, requests, re
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-#GROQ_API_KEY = "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"
-#GROQ_API_KEY = "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"
-GROQ_API_KEY = "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"
+
+GROQ_API_KEY = "YOUR_API_KEY"
 
 # NLP pipeline
 nlp = pipeline("ner", grouped_entities=True)
